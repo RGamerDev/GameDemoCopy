@@ -4,24 +4,16 @@ using UnityEngine.SceneManagement;
 public class PausedMenu : MonoBehaviour
 {
     public static bool GameIsPaused = false;
-    public GameObject PauseMenuUI;
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (GameIsPaused)
-            {
-                Resume();
-            }
-            else
-            {
-                Pause();
-            }
-        }
-    }
+    public Transform Player;
+    public static GameObject PauseMenuUI;
+    public GameObject Coin;
 
     public void Resume()
+    {
+        resume();
+    }
+
+    static public void resume()
     {
         Debug.Log("Resuming game...");
         PauseMenuUI.SetActive(false);
@@ -29,7 +21,7 @@ public class PausedMenu : MonoBehaviour
         GameIsPaused = false;
     }
 
-    void Pause()
+    public static void Pause()
     {
         PauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
@@ -47,5 +39,14 @@ public class PausedMenu : MonoBehaviour
     {
         Debug.Log("Quitting...");
         Application.Quit();
+    }
+
+    public void Retry()
+    {
+        PauseMenuUI.SetActive(false);
+        Player.position = new Vector3{x = 0f, y = 1.14f, z = 0f };
+        Player.rotation = new Quaternion {y = 0f };
+        Time.timeScale = 1f;
+
     }
 }

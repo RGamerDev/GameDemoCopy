@@ -71,7 +71,9 @@
     <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
     <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
     <Compile Include="Assets\Script\CameraFollow.cs" />
+    <Compile Include="Assets\Script\CoinScript.cs" />
     <Compile Include="Assets\Script\MainMenu.cs" />
+    <Compile Include="Assets\Script\MainScript.cs" />
     <Compile Include="Assets\Script\PausedMenu.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
