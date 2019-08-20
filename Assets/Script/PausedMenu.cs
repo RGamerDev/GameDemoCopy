@@ -38,7 +38,8 @@ public class PausedMenu : MonoBehaviour
     public void QuitGame()
     {
         Debug.Log("Quitting...");
-        Application.Quit();
+        PauseMenuUI.SetActive(false);
+        SceneManager.LoadScene(0);
     }
 
     public void Retry()
@@ -47,6 +48,5 @@ public class PausedMenu : MonoBehaviour
         Player.position = new Vector3{x = 0f, y = 1.14f, z = 0f };
         Player.rotation = new Quaternion {y = 0f };
         Time.timeScale = 1f;
-
     }
 }

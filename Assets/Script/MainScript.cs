@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class MainScript : MonoBehaviour
 {
+    public Transform Player;
     public GameObject PauseMenuUI;
     public GameObject CoinUi;
     private static int Coins = 0;
@@ -39,6 +40,11 @@ public class MainScript : MonoBehaviour
         {
             other.gameObject.SetActive(false);
             Coins++;
+        }
+        else if(other.gameObject.CompareTag("Water"))
+        {
+            Debug.Log("Failed");
+            Player.position = new Vector3 { x = 14, y = -0.23f, z = 10 };
         }
     }
 }

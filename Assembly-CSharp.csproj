@@ -75,6 +75,7 @@
     <Compile Include="Assets\Script\MainMenu.cs" />
     <Compile Include="Assets\Script\MainScript.cs" />
     <Compile Include="Assets\Script\PausedMenu.cs" />
+    <Compile Include="Assets\Script\TutorialScript.cs" />
     <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/berth/Desktop/GameDemoCopy/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
