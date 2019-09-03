@@ -82,6 +82,8 @@
     <Compile Include="Assets\Script\MainScript.cs" />
     <Compile Include="Assets\Script\PauseAndPlayTexture.cs" />
     <Compile Include="Assets\Script\PausedMenu.cs" />
+    <Compile Include="Assets\Script\PlatformRotate.cs" />
+    <Compile Include="Assets\Script\PlayerAttach.cs" />
     <Compile Include="Assets\Script\TutorialScript.cs" />
     <None Include="Assets\ProCore\ProBuilder\Shader\pb_TransparentOverlay.shader" />
     <None Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\README.txt" />
