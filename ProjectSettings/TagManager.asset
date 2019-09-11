@@ -7,6 +7,9 @@ TagManager:
   - Coin
   - Ground
   - Water
+  - Person
+  - Text
+  - Platform
   layers:
   - Default
   - TransparentFX
